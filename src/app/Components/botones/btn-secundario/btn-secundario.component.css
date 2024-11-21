@@ -1,0 +1,23 @@
+button {
+    background-color: whitesmoke; /* Azul llamativo */
+    color: blue; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    cursor: pointer; /* Cambia el cursor al pasar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para un efecto flotante */
+    transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
+  }
+  
+  button.hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el ratón */
+    transform: scale(1.05); /* Efecto de agrandamiento al pasar el ratón */
+  }
+  
+  button.azul:active {
+    background-color: #004085; /* Azul aún más oscuro al hacer clic */
+    transform: scale(0.98); /* Efecto de presión al hacer clic */
+  }
+  

@@ -1,0 +1,23 @@
+button {
+    background-color: #28a745; /* Verde llamativo */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    cursor: pointer; /* Cambia el cursor al pasar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para un efecto flotante */
+    transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
+  }
+  
+  button:hover {
+    background-color: #218838; /* Un verde más oscuro al pasar el ratón */
+    transform: scale(1.05); /* Efecto de agrandamiento al pasar el ratón */
+  }
+  
+  button:active {
+    background-color: #1e7e34; /* Verde aún más oscuro al hacer clic */
+    transform: scale(0.98); /* Efecto de presión al hacer clic */
+  }
+  

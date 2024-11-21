@@ -1,0 +1,13 @@
+<div class="contai">
+    <label for="password">CONTRASEÑA</label>
+  </div>
+  <input 
+    type="password"
+    [value]="value"
+    (input)="onInputChange($event)"
+    id="password"
+    required 
+    minlength="6"
+    class="input"
+    placeholder="Ingresa tu contraseña">
+  

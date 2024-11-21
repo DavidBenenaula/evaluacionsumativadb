@@ -1,0 +1,36 @@
+<div [class.dark-mode]="isDarkMode" class="Container">
+  <div class="header">
+    <h2>EVALUACIÓN SUMATIVA APORTE 2</h2>
+  </div>
+
+  <!-- Columna izquierda -->
+  <div class="left-column">
+    <app-btn-modo-oscuro (darkModeToggle)="onDarkModeToggle($event)"></app-btn-modo-oscuro>
+    <app-btn-aceptar (clicked)="validateEmail()"></app-btn-aceptar>
+    <app-btn-cancelar (clicked)="clearInputs()"></app-btn-cancelar>
+    <app-btn-primario (clicked)="incrementClickCount()"></app-btn-primario>
+    <app-btn-secundario (clicked)="showTime()"></app-btn-secundario>
+
+    <!-- Inputs -->
+    <app-input-contrasenia
+      [(value)]="passwordValue"
+      (passwordStatus)="updatePasswordStatus($event)">
+    </app-input-contrasenia>
+    <div *ngIf="passwordMessage" class="password-status">
+      {{ passwordMessage }}
+    </div>
+    <app-input-email [(value)]="emailValue"></app-input-email>
+    <app-input-texto [(value)]="textValue"></app-input-texto>
+  </div>
+
+  <!-- Columna derecha -->
+  <div class="right-column">
+    <app-demostrativo
+      [email]="emailValue"
+      [password]="passwordValue"
+      [text]="textValue"
+      [clickCount]="clickCount"
+      [currentTime]="currentTime">
+    </app-demostrativo>
+  </div>
+</div>
